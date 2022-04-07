@@ -1,3 +1,2 @@
-# Proyecto Base
+# Código de la clase del 7/4/2022
 
-Reemplazar por alguna descripción del proyecto.
