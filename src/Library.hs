@@ -38,3 +38,19 @@ anioActual :: Number
 anioActual = 2022
 
 between bajo alto medio = bajo <= medio && medio <= alto
+
+type Hora = Number
+type Dia = String
+
+horaCierre :: Dia -> Bool -> Hora
+horaCierre "domingo" True = 13
+horaCierre "sabado" False = 21
+horaCierre dia True = 20
+horaCierre dia False = 12 + length dia
+
+---otherwise = True
+
+descuento :: Hora -> Number
+descuento hora | hora <= 10  = 10
+    | hora >= 18 = 0
+    | otherwise = 5
